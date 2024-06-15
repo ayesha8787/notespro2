@@ -1,6 +1,5 @@
 package com.example.notespro2;
 
-import static com.example.notespro2.R.id.logout;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
