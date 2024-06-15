@@ -51,6 +51,7 @@ public class notesActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu,menu);
 
         return true;
+
     }
 
 
