@@ -33,8 +33,11 @@ public class notesActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         mcreatenotefab = findViewById(R.id.createnotefab);
 
+        if(getSupportActionBar() != null){
+            getSupportActionBar().setTitle("All Notes");
+        }
 
-        getSupportActionBar().setTitle("All Notes");
+
         mcreatenotefab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,5 +68,4 @@ public class notesActivity extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
     }
-}
 }
