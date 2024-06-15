@@ -38,7 +38,7 @@ public class notesActivity extends AppCompatActivity {
         }
 
 
-        mcreatenotefab.setOnClickListener(new View.OnClickListener() {
+         mcreatenotefab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
             startActivity(new Intent(notesActivity.this,Createnote.class));
