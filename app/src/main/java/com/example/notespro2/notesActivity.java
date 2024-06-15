@@ -56,16 +56,14 @@ public class notesActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-       switch (item.getItemId()){
-           case R.id.logout:
-
-               firebaseAuth.signOut();
-
-               finish();
-               startActivity(new Intent(notesActivity.this, MainActivity.class));
-       }
-
-        return super.onOptionsItemSelected(item);
+        if (item.getItemId() == R.id.logout) {
+            firebaseAuth.signOut();
+            finish();
+            startActivity(new Intent(notesActivity.this, MainActivity.class));
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
     }
+}
 }
