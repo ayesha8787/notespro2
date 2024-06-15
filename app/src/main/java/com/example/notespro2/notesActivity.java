@@ -18,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class notesActivity extends AppCompatActivity {
-    FloatingActionButton mcreatenotefab;
+     FloatingActionButton mcreatenotefab;
     FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
