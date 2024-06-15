@@ -14,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -61,7 +59,9 @@ public class notesActivity extends AppCompatActivity {
 
        switch (item.getItemId()){
            case R.id.logout:
+
                firebaseAuth.signOut();
+
                finish();
                startActivity(new Intent(notesActivity.this, MainActivity.class));
        }
