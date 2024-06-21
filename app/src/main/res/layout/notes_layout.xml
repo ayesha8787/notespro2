@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/notecard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:elevation="5dp"
         app:cardCornerRadius="5dp"
         app:cardMaxElevation="5dp"
-        />
+        >
     <LinearLayout
         android:id="@+id/note"
         android:layout_width="match_parent"
@@ -26,10 +30,9 @@
     android:id="@+id/notetitle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
-    android:paddingBottom="10dp"
+  android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="5dp"
     android:text="This is your developer "
     android:textSize="20sp"
     android:textStyle="bold"
@@ -42,24 +45,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="0"
-                android:src="@drawable/menu_icon"
+                android:src="@drawable/assignment_icon"
                 />
 
         </LinearLayout>
         <TextView
             android:id="@+id/notecontent"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="This is yor code which is appear here"
             android:textSize="20sp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
             android:textColor="@color/black"
-
             />
-        
+
     </LinearLayout>
 
-
+    </androidx.cardview.widget.CardView>
 </RelativeLayout>
